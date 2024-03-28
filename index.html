@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https:////cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https:////cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="images/ferrari-logo-scuderia-free-vector-removebg-preview.png" class="logoimg" alt="">
-        </div>
+        <a href="index.html">
+            <div class="logo">
+                <img src="images/ferrari-logo-scuderia-free-vector-removebg-preview.png" class="logoimg" alt="">
+            </div>
+        </a>
         <div class="container">
             <div class="menu">
-                <div class="menu_item">Cars</div>
-                <div class="menu_item">History</div>
-                <div class="menu_item">News</div>
-                <div class="menu_item">Contacts</div>
+                <div class="menu_item"><a href="" class="scroll">Cars</a></div>
+                <div class="menu_item"><a href="#History" class="scroll">History</a></div>
+                <div class="menu_item"><a href="#News" class="scroll">News</a></div>
+                <div class="menu_item"><a href="#Contacts" class="scroll">Contacts</a></div>
             </div>
             <div class="menu_small_icon">
                 <div class="stick"></div>
@@ -34,7 +38,47 @@
         </div>
     </header>
     <main>
-        <section class="history">
+        <section class="slider">
+            <div class="carousel">
+                <div class="carousel__item">
+                    <a href="#">
+                        <img src="images/sf90xx.avif" alt="" class="image">
+                        <p class="title">Sf 90 XX</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="purosangue.html">
+                        <img src="images/purosangue.avif" alt="" class="image">
+                        <p class="title">Purosangue</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="sf90.html">
+                        <img src="images/sf90.avif" alt="" class="image">
+                        <p class="title">Sf 90</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="sf90.html">
+                        <img src="images/sf90spider.avif" alt="" class="image">
+                        <p class="title">Sf 90 Spider</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="roma.html">
+                        <img src="images/roma.avif" alt="" class="image">
+                        <p class="title">Roma</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="roma.html">
+                        <img src="images/romaspider.avif" alt="" class="image">
+                        <p class="title">Roma Spider</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="history" id="History">
             <h1>
                 History
             </h1>
@@ -60,8 +104,50 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="news" id="News">
+            <div class="carousel">
+                <div class="carousel__item">
+                    <a href="#">
+                        <img src="images/6e98b42a-25e3-4181-abd3-0bfa85c49e14.jpg" alt="" class="image1">
+                        <p class="title">Melbourne 24 March 2024</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="purosangue.html">
+                        <img src="images/purosangue.avif" alt="" class="image">
+                        <p class="title">Purosangue</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="sf90.html">
+                        <img src="images/sf90.avif" alt="" class="image">
+                        <p class="title">Sf 90</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="sf90.html">
+                        <img src="images/sf90spider.avif" alt="" class="image">
+                        <p class="title">Sf 90 Spider</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="roma.html">
+                        <img src="images/roma.avif" alt="" class="image">
+                        <p class="title">Roma</p>
+                    </a>
+                </div>
+                <div class="carousel__item">
+                    <a href="roma.html">
+                        <img src="images/romaspider.avif" alt="" class="image">
+                        <p class="title">Roma Spider</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts" id="Contacts">
             <h2>Contacts</h2>
+            <h3>E-Mail: ferrari@contact.com</h3>
+            <h4>If you have any questions:</h4>
             <form action="https://echo.htmlacademy.ru/">
                 <input type="text" placeholder="Name" class="name" name="name" required>
                 <input type="text" placeholder="Surname" class="Surname">
@@ -80,5 +166,7 @@
         </div>
     </footer>
 <script src="script.js"></script>
+<script src="scroll.js"></script>
+<script src="slider.js"></script>
 </body>
 </html>
